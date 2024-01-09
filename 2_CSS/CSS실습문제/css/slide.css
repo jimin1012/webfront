@@ -1,0 +1,132 @@
+* {
+  margin:0; /*브라우저 내 기본 설정값 초기화*/
+  padding: 0;/*브라우저 내 기본 설정값 초기화*/
+  box-sizing: border-box;
+}
+
+
+[name="slide"] { display: none; } /*클래스 slidebox 내 name="slide"부분 */
+
+.slidebox { 
+  /* max-width: 1000px;  */
+  width: 100%;
+  height: 600px;
+  min-height: 600px;
+  margin: 0 auto;    
+}
+.slidebox img { /*자신의 넓이 이상으로 커지지 않도록 함, 반응형 사용 가능*/
+  max-width: 100%;
+  width: 100%;
+  height: 600px;
+}
+.slidebox .slidelist {
+  white-space: nowrap;
+   /*빈공간을 없애기 위함*/
+  overflow: hidden; /*초과해서 이미지가 나올 경우 나오지 않게 함*/
+}
+.slidebox .slideitem {
+  position: relative;
+  display: inline-block; /*세로 정렬을 가운데 맞추기 위함*/
+  vertical-align: middle;
+  width: 100%;
+  transition: all .35s; /*자연스러운 전환 속성을 위함*/
+}
+.slidebox .slideitem label {
+  position: absolute; /*자율 배치하는 값*/
+  z-index: 1; /*기본값 1*/
+  top: 95%;
+  left: 49%;
+  transform: translateY(-50%); /*가운데 지정*/
+  border-radius: 50%; /*둥근 버튼 모양*/
+  cursor: pointer; /*마우스가 올라가면 커서가 포인터로 바뀌도록 함*/
+  width: 12px;
+  height: 12px;
+
+}
+
+.banner-con-box{
+  position: absolute; /*자율 배치하는 값*/
+  z-index: 2; /*기본값 1*/
+  top: 20%;
+  cursor: pointer; /*마우스가 올라가면 커서가 포인터로 바뀌도록 함*/
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.banner-title{
+  font-size: 20px;
+}
+.banner-con-1{
+  margin-top: 25px;
+  font-size: 52px;
+  font-weight: bold;
+}
+.banner-con-2{
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+#banner-link{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.label1{
+  background-color: #fff;
+}
+
+.label2{
+  background-color: aqua;
+  margin-left: 20px;
+}
+
+.label3{
+  background-color: black;
+  margin-left: 40px;
+}
+[id="slide01"]:checked ~ .slidelist >.slideitem >.label1{
+  width: 10px;
+  height: 10px;
+}
+
+
+
+
+[id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0); animation:slide01-1 10s infinite}
+[id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%); animation:slide02-2 10s infinite}
+[id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%); animation:slide03-3 10s infinite}
+
+@keyframes slide01-1 {
+  0% {left: 0%;} 
+  25% {left: 0%;} 
+  48% {left: -100%;} 
+  50% {left: -100%;}
+  98% {left: -200%;} 
+  100% {left:0%} 
+}
+@keyframes slide02-2 {
+  0% {left: 0%;} 
+  23% {left: 0%;}
+  25% {left: -100%;} 
+  48% {left: -100%;} 
+  50% {left: 100%;}
+  98% {left: 100%;} 
+  100% {left:0%}
+}
+@keyframes slide03-3 {
+  0% {left: 0%;} 
+  23% {left: 0%;}
+  25% {left: 200%;} 
+  48% {left: 200%;} 
+  50% {left: 100%;}
+  98% {left: -100%;} 
+  100% {left:0%}
+}
+
+

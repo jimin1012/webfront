@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12월20일JS자습</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .wrap {
+            padding: 40px 0;
+            background-color: #A8C0D6;
+            overflow: auto;
+            width: 500px;
+            height: 450px;
+        }
+
+        .wrap .chat {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .wrap .chat .icon {
+            position: relative;
+            overflow: hidden;
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: #eee;
+        }
+
+        .wrap .chat .icon img {
+            position: absolute;
+            /* top: 10px; */
+            left: 50%;
+            font-size: 2.5rem;
+            color: #aaa;
+            transform: translateX(-50%);
+            background: url(js/123.png);
+            overflow: hidden;
+            object-fit: cover;
+            width: 50px;
+            height: auto;
+        }
+
+        .wrap .chat .textbox {
+            position: relative;
+            display: inline-block;
+            max-width: calc(100% - 70px);
+            padding: 10px;
+            margin-top: 7px;
+            font-size: 13px;
+            border-radius: 10px;
+        }
+
+        .wrap .chat .textbox::before {
+            position: absolute;
+            display: block;
+            top: 0;
+            font-size: 1.5rem;
+        }
+
+        .wrap .ch1 .textbox {
+            margin-left: 20px;
+            background-color: #fff;
+        }
+
+        .wrap .ch1 .textbox::before {
+            left: -15px;
+            top: -5px;
+            content: "◀";
+            color: #fff;
+        }
+
+        .wrap .ch2 {
+            flex-direction: row-reverse;
+        }
+
+        .wrap .ch2 .textbox {
+            margin-right: 20px;
+            background-color: #F9EB54;
+        }
+
+        .wrap .ch2 .textbox::before {
+            right: -15px;
+            top: -5px;
+            content: "▶";
+            color: #F9EB54;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>로그인 느낌쓰</h2>
+
+    <hr>
+
+    <div>
+        <form action="#" name="test">
+            <div style="display: flex; flex-direction: column; width: 200px;">
+                <input type="email" name="email" id="email">
+                <input type="password" name="pwd" id="pwd">
+                <p id="text1"></p>
+            </div>
+            <button id="btn" type="button">버튼</button>
+        </form>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div  style=" background-color: #aaa; width: 500px;">
+        <div id="test_chat" style="visibility: hidden;">
+            <div class="wrap" >
+        
+            </div>
+            <input id="test-chat-input" type="text" size="40">
+            <button onclick="userChat()">상대채팅</button>
+            <button onclick="myChat()">내쪽채팅</button>
+        </div>
+    </div>
+    
+
+
+    <script>
+        const email = document.getElementById("email")
+        const pwd = document.getElementById("pwd")
+        const text1 = document.getElementById("text1")
+
+        document.getElementById("btn").addEventListener("click",function(){
+            if( !email.value.length > 0 ){
+                text1.innerText = "이메일을 입력하세요";
+            }else if(!pwd.value.length > 0){
+                text1.innerText = "비밀번호를 입력하세요";
+            }else{
+                document.getElementById("test_chat").style.visibility = "visible";
+            }
+
+        })
+
+
+        function userChat(){
+            const bg = document.getElementsByClassName("wrap");
+            const input = document.querySelector("#test-chat-input");
+
+            console.log(bg);
+            console.log(input);
+            if(input.value.trim().length > 0){
+        
+                bg[0].innerHTML += " <div class='chat ch1'><div class='icon'><img class='fa-solid fa-user' src='js/123.png' alt=''></div><div class='textbox'>"+input.value.trim()+" </div> </div>";
+            
+
+                input.value ="";
+                input.focus();
+            }
+        }
+
+        function myChat(){
+            const bg = document.getElementsByClassName("wrap");
+            const input = document.querySelector("#test-chat-input");
+            console.log(bg);
+            console.log(input);
+            if(input.value.trim().length > 0){
+
+                bg[0].innerHTML += "<div class='chat ch2'> <div class='textbox'> "+input.value.trim()+"</div></div>";
+                
+                input.value ="";
+                input.focus();
+            }
+        }
+
+    </script>
+</body>
+</html>

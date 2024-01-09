@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제3 login</title>
+    <!-- <style>
+        #login-btn{
+            display: inline-block;
+            width: 100px;
+            height: 35px;
+            background-color: green;
+            color: white;
+            border: none;
+            margin-top: 10px;
+        }
+        #close-btn{
+            display: inline-block;
+            width: 100px;
+            height: 35px;
+            background-color: green;
+            color: white;
+            border: none;
+            margin-top: 10px;
+           
+        }
+        #login-btn:hover{
+            background-color: red;
+            cursor: pointer;
+        }
+        #close-btn:hover{
+            background-color: red;
+            cursor: pointer;
+        }
+        #email{
+            margin-left: 32px;
+        }
+        #password{
+            margin-left: 1px;
+        }
+        label{
+            font-weight: bold;
+        }
+       #con{
+        /* opacity: 1; */
+        /* transition: 2s; */
+       }
+    </style> -->
+    <style>
+        form .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        button.btn:hover {
+            opacity: 0.8;
+            color: yellow;
+        }
+
+        .cancel:hover {
+            opacity: 0.8;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <h3>로그인을 클릭하면 로그인 폼이 나타납니다.</h3>
+    <button type="button" id="btn1">로그인</button>
+
+    <div id="con">
+        <form action="../4_jQuery/08_effect메소드1.html">
+            <fieldset>
+                <legend>로그인</legend>
+                <h1>Login</h1>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email"  placeholder="Enter Email">
+                </div>
+                <div>
+                    <label for="email">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                </div>
+                <button type="submit" id="login-btn">Login</button>
+                <button type="submit" id="close-btn">Close</button>
+            </fieldset>
+
+        </form>
+    </div> -->
+
+    <h2>로그인을 클릭하면 로그인 폼이 나타납니다.</h2>
+
+    <button class="open">로그인</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="08_effect메소드.html" >
+            <fieldset>
+                <legend>로그인</legend>
+
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <br>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <br>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel">Close</button>
+            </fieldset>
+        </form>
+    </div>
+
+
+    
+    <script src="js/실습문제3로그인.js"></script>
+</body>
+</html>

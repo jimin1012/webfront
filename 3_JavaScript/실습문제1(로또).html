@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또번호생성기</title>
+
+    <style>
+        *{
+            /* margin: 0 auto; */
+        }
+        #container{
+            display: flex;
+            flex-direction: row;
+        }
+        #container div{
+            width: 50px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 30px;
+            margin: 0 10px;
+
+            text-align: center;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+        #createLotto{
+            width: 400px;
+            margin-top: 40px;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="txt0"></div>
+        <div id="txt1"></div>
+        <div id="txt2"></div>
+        <div id="txt3"></div>
+        <div id="txt4"></div>
+        <div id="txt5"></div>
+    </div>
+    <button id="createLotto">로또 번호 생성</button>
+
+    <script>
+        //로또 번호 생성 시 1~45 난수 생성
+
+        // lotto에 저장된 난수 오름차순 정렬
+
+        // + 로또 번호 중복 X
+        document.getElementById("createLotto").addEventListener("click",function(){
+            
+            // const div = document.getElementById("txt0");
+            
+            // let arr = new Array(6);
+            let arr =[];
+             
+
+
+            while(arr.length < 6){
+                let  lottoNum = parseInt(Math.random()*45+1);
+
+                if(arr.indexOf(lottoNum) == -1){//중복 x
+                    arr.push(lottoNum);
+                }
+            }
+            arr.sort(function(a,b){return a-b;})
+
+            console.log(arr);
+
+            
+            // for(let i = 0; i< arr.length; i++){
+            //     lottoNum = parseInt(Math.random()*45+1);
+            //     if(arr.indexOf(lottoNum) == -1){//중복 x
+            //         arr[i] = lottoNum;
+            //     }
+                
+            //     // arr[i] = lottoNum;
+            //     arr.sort(function(a,b){return a-b;})
+
+               
+            // }
+            
+            
+            for(let i = 0; i< arr.length; i++){
+
+                document.getElementById("txt"+i+"").innerText = arr[i];
+            }
+            
+        })
+        
+    </script>
+</body>
+</html>

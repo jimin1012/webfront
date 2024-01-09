@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지원하기</title>
+    <link rel="stylesheet" href="css/Woo_recruit.css">
+    <script src="https://kit.fontawesome.com/0ddb604158.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 가장 큰 감싸는 부분 -->
+    <div class="wrap">
+        <!-- 헤더시작 -->
+        <header>
+            <div class="hd-inner">
+                <div class="hd-left">
+                    <img id="hd-logo" src="https://career-cdn.woowahan.com/resources/static/img/logo-pc.2b4c3501.svg" alt="">
+                </div>
+                <div class="hd-mid">
+                    <ul>
+                        <li><a href="#">지원하기</a></li>
+                        <li><a href="#">영업프로세스</a></li>
+                        <li><a href="#">어떻게 일해요?</a></li>
+                        <li><a href="#">우아한생활</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="hd-right">
+                    <nav>
+                        <a href="#">우아한형제들</a>
+                        <a href="#">기술블로그</a>
+                        <a href="#">배민다움</a>
+                    </nav>
+                    <ul>
+                        <li><img src="https://career-cdn.woowahan.com/resources/static/img/icon-heart.27927156.svg" alt="#"></li>
+                        <li><img src="https://career-cdn.woowahan.com/resources/static/img/icon-my.61f07f16.svg" alt="#"></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- 메인 시작 -->
+        <main>
+            <section class="main-banner">
+                <div class="m-banner-img">
+                    <input type="radio" name="slide" id="slide01" checked>
+                    <input type="radio" name="slide" id="slide02">
+                    <input type="radio" name="slide" id="slide03">
+                    <input type="radio" name="slide" id="slide04">
+                    <ul class="slidelist">
+                        <li class="slideitem">
+                            <div>
+                                <div class="banner-con-box">
+                                    <div class="banner-title">성장 동료 개발문화 근무환경</div>
+                                    <div class="banner-con-1">시니어 개발자로</div>
+                                    <div class="banner-con-2">우형에서 일한다면?</div>
+                                    <div><a id="banner-link" href="#">알아보러 가기 ></a></div>
+                                </div>
+                                <div class="label-box">
+                                    <label for="slide01" class="label1"></label>
+                                    <label for="slide02" class="label2"></label>
+                                    <label for="slide03" class="label3"></label>
+                                </div>
+                                
+                                <a><img src="img/Woowa/03.png"></a>
+                            </div>
+                        </li>
+                        <li class="slideitem">
+                            <div>
+
+                                <div class="banner-con-box">
+                                    <div class="banner-title">리프레시 휴가, 단체상해보험, 도서비 지원 등등등</div>
+                                    <div class="banner-con-1">우아한 형제들 복지를</div>
+                                    <div class="banner-con-2">자세히 알려드려요</div>
+                                    <div><a id="banner-link" href="#">입사하면 나도! ></a></div>
+                                </div>
+
+                                <div>
+                                    <label for="slide01" class="label1"></label>
+                                    <label for="slide02" class="label2"></label>
+                                    <label for="slide03" class="label3"></label>
+                                </div>
+                            
+                            
+                                <a><img src="img/Woowa/2515.png"></a>
+                            </div>
+                        </li>
+                        <li class="slideitem">
+                            <div>
+
+                                <div class="banner-con-box">
+                                    <div class="banner-title">구성원들의 솔직한 이야기</div>
+                                    <div class="banner-con-1">우아한 형제들,</div>
+                                    <div class="banner-con-2">정말 일하기 좋나요?</div>
+                                    <div><a id="banner-link" href="#">확인하러 가기 > </a></div>
+                                </div>
+
+                                <div>
+                                    <label for="slide01" class="label1"></label>
+                                    <label for="slide02" class="label2"></label>
+                                    <label for="slide03" class="label3"></label>
+                                </div>
+                                <a><img src="img/Woowa/aas.png"></a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="m-banner-con">
+                    <div>
+                        <h2>관심있는 직무, 지금 검색해보세요!</h2>
+                    </div>
+                    <div>
+                        <input name="query" id="query"  type="search" placeholder="찾으시는 공고의 키워드를 입력하세요">
+                        <button type="submit" id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#">Tech</a></li>
+                            <li><a href="#">product</a></li>
+                            <li><a href="#">Business & Sales</a></li>
+                            <li><a href="#"> Marketing</a></li>
+                            <li><a href="#">Creative</a></li>
+                            <li><a href="#">Corporate</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-recruit">
+                <div class="recruit-wrap">
+                    <aside class="filter-left">
+                        <div class="filter-left-inner">
+                            <div class="filter-title">
+                                <h3>직무</h3>
+                                <button type="button" class="btn-refersh">필터 초기화</button>
+                            </div>
+                            <div class="filter-choice">
+                                <ul class="job-list">
+                                    <li>
+                                        <input id="job-code-1" type="checkbox">
+                                        <label for="job-code-1">서버/백엔드</label>
+                                    </li>
+                                    <li>
+                                        <input id="job-code-2" type="checkbox">
+                                        <label for="job-code-2">SRE</label>
+                                    </li>
+                                    <li>
+                                        <input id="job-code-3" type="checkbox">
+                                        <label for="job-code-3">데이터</label>
+                                    </li>
+                                    <li>
+                                        <input id="job-code-4" type="checkbox">
+                                        <label for="job-code-4">정보보안</label>
+                                    </li>
+                                    <li>
+                                        <input id="job-code-5" type="checkbox">
+                                        <label for="job-code-5">QA</label>
+                                    </li>
+                                    <li>
+                                        <input id="job-code-6" type="checkbox">
+                                        <label for="job-code-6">로보틱스</label>
+                                    </li>
+                                    <li>
+                                        <input id="job-code-7" type="checkbox">
+                                        <label for="job-code-7">프론트엔드</label>
+                                    </li>
+                                    <li>
+                                        <input id="job-code-8" type="checkbox">
+                                        <label for="job-code-8">솔루션전문가</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- --------------------------------- -->
+                            <div class="filter-title">
+                                <h3>경력</h3>
+                            </div>
+                            <div class="filter-choice">
+                                <div class="select-form">
+                                    <select name="filter-career" id="filter-career">
+                                        <option value="">전체</option>
+                                        <option value="">신입</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                            <!-- --------------------------------- -->
+                            <div class="filter-title">
+                                <h3>고용형태</h3>
+                            </div>
+                            <div class="filter-choice">
+                                <div class="fiter-area">
+                                    <ul class="check-choice">
+                                        <li>
+                                            <input type="checkbox" id="employment-type-1" name="employment-type">
+                                            <label for="employment-type-1">정규직</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="employment-type-2" name="employment-type">
+                                            <label for="employment-type-2">기간제</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="employment-type-3" name="employment-type">
+                                            <label for="employment-type-3">인턴</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- --------------------------------- -->
+                            <div class="filter-title">
+                                <h3>서비스분야</h3>
+                            </div>
+                            <div class="filter-choice">
+                                <div class="fiter-area">
+                                    <ul class="check-choice">
+                                        <li>
+                                            <input type="checkbox" id="employment-type-1" name="employment-type">
+                                            <label for="employment-type-1">배달의민족</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="employment-type-2" name="employment-type">
+                                            <label for="employment-type-2">배민1</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="employment-type-3" name="employment-type">
+                                            <label for="employment-type-3">B마트</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="employment-type-3" name="employment-type">
+                                            <label for="employment-type-3">배민상회</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="employment-type-3" name="employment-type">
+                                            <label for="employment-type-3">배민로봇</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="employment-type-3" name="employment-type">
+                                            <label for="employment-type-3">배민커넥트</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="employment-type-3" name="employment-type">
+                                            <label for="employment-type-3">배민선물하기</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="employment-type-3" name="employment-type">
+                                            <label for="employment-type-3">배민스토어</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="employment-type-3" name="employment-type">
+                                            <label for="employment-type-3">배민식업광장</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="employment-type-3" name="employment-type">
+                                            <label for="employment-type-3">공통</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="employment-type-3" name="employment-type">
+                                            <label for="employment-type-3">무관</label>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="recruit-con">
+                        <div class="recruit-data">
+                            <div class="recruit-list-wrap">
+                                <ul class="recruit-list">
+                                    <li>
+                                        <div>
+                                            <a href="#">
+                                                <span class="rc-title">경력</span>
+                                                <span class="rc-con">[Tech] People System Senior Specialist (Workday 전문가)</span>
+                                            </a>
+                                            <div>
+                                                <span>정규직 | </span>
+                                                <span>영입 종료시</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="	https://career-cdn.woowahan.com/resources/static/img/icon-fav.ee46aeed.svg" alt="a">
+                                            </a>
+                                            <a href="#">
+                                                <img src="https://career-cdn.woowahan.com/resources/static/img/icon-sns.dd9ae49a.svg" alt="b">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#">
+                                                <span class="rc-title">경력</span>
+                                                <span class="rc-con">[Tech] 업무시스템 개발자</span>
+                                            </a>
+                                            <div>
+                                                <span>정규직 | </span>
+                                                <span>영입 종료시</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="	https://career-cdn.woowahan.com/resources/static/img/icon-fav.ee46aeed.svg" alt="a">
+                                            </a>
+                                            <a href="#">
+                                                <img src="https://career-cdn.woowahan.com/resources/static/img/icon-sns.dd9ae49a.svg" alt="b">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#">
+                                                <span class="rc-title">경력</span>
+                                                <span class="rc-con">[Tech] 로봇딜리버리플랫폼팀 백엔드 엔지니어(기간제)</span>
+                                            </a>
+                                            <div>
+                                                <span>정규직 | </span>
+                                                <span>영입 종료시</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="	https://career-cdn.woowahan.com/resources/static/img/icon-fav.ee46aeed.svg" alt="a">
+                                            </a>
+                                            <a href="#">
+                                                <img src="https://career-cdn.woowahan.com/resources/static/img/icon-sns.dd9ae49a.svg" alt="b">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#">
+                                                <span class="rc-title">경력</span>
+                                                <span class="rc-con">[Tech] 로봇딜리버리플랫폼팀 프론트엔드 엔지니어(기간제)</span>
+                                            </a>
+                                            <div>
+                                                <span>정규직 | </span>
+                                                <span>영입 종료시</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="	https://career-cdn.woowahan.com/resources/static/img/icon-fav.ee46aeed.svg" alt="a">
+                                            </a>
+                                            <a href="#">
+                                                <img src="https://career-cdn.woowahan.com/resources/static/img/icon-sns.dd9ae49a.svg" alt="b">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#">
+                                                <span class="rc-title">경력</span>
+                                                <span class="rc-con">[Tech] 배민커머스서비스실 배민커머스웹프론트개발팀 프론트엔드 개발자</span>
+                                            </a>
+                                            <div>
+                                                <span>정규직 | </span>
+                                                <span>영입 종료시</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="	https://career-cdn.woowahan.com/resources/static/img/icon-fav.ee46aeed.svg" alt="a">
+                                            </a>
+                                            <a href="#">
+                                                <img src="https://career-cdn.woowahan.com/resources/static/img/icon-sns.dd9ae49a.svg" alt="b">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#">
+                                                <span class="rc-title">경력</span>
+                                                <span class="rc-con">[Tech] 로보틱스LAB 하드웨어 QA엔지니어</span>
+                                            </a>
+                                            <div>
+                                                <span>정규직 | </span>
+                                                <span>영입 종료시</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="	https://career-cdn.woowahan.com/resources/static/img/icon-fav.ee46aeed.svg" alt="a">
+                                            </a>
+                                            <a href="#">
+                                                <img src="https://career-cdn.woowahan.com/resources/static/img/icon-sns.dd9ae49a.svg" alt="b">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#">
+                                                <span class="rc-title">경력</span>
+                                                <span class="rc-con">[Tech] 로보틱스LAB 하드웨어(전장) 엔지니어</span>
+                                            </a>
+                                            <div>
+                                                <span>정규직 | </span>
+                                                <span>영입 종료시</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="	https://career-cdn.woowahan.com/resources/static/img/icon-fav.ee46aeed.svg" alt="a">
+                                            </a>
+                                            <a href="#">
+                                                <img src="https://career-cdn.woowahan.com/resources/static/img/icon-sns.dd9ae49a.svg" alt="b">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#">
+                                                <span class="rc-title">경력</span>
+                                                <span class="rc-con">[Tech] 로보틱스LAB Perception 엔지니어</span>
+                                            </a>
+                                            <div>
+                                                <span>정규직 | </span>
+                                                <span>영입 종료시</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="	https://career-cdn.woowahan.com/resources/static/img/icon-fav.ee46aeed.svg" alt="a">
+                                            </a>
+                                            <a href="#">
+                                                <img src="https://career-cdn.woowahan.com/resources/static/img/icon-sns.dd9ae49a.svg" alt="b">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- footer 시작 -->
+        <footer>
+            <div class="ft-wrap">
+                <div class="ft-top">
+                    <!-- 위로 올라가는 이미지 넣을공간임 -->
+                </div>
+                <div class="ft-bottom">
+                    <!-- 그 아래 부분 선과 글자들 -->
+                    <div class="ft-b-left">
+                        <div>
+                            <p>이용약관 | </p>
+                            <p><strong>개인정보처리방침</strong></p>
+                        </div>
+                        <div>서울시 송파구 위례성대로 2 장은빌딩 2층 (주)우아한형제들</div>
+                        <div>Copyright © <strong style="color: black;">Woowa Brothers Corp.</strong> All rights Reserved</div>
+                    </div>
+                    <div class="ft-b-right">
+                        <div>
+                            <a href="#"><img src="https://career-cdn.woowahan.com/resources/static/img/icon-instagram.6232efef.svg" alt="#"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://career-cdn.woowahan.com/resources/static/img/icon-youtube.7a99525c.svg" alt="#"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://career-cdn.woowahan.com/resources/static/img/icon-facebook-gray.82b9d6b7.svg" alt="#"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://career-cdn.woowahan.com/resources/static/img/icon-linkedin.4a36c8bd.svg" alt="#"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://career-cdn.woowahan.com/resources/static/img/footer-logo.f179a6be.svg" alt="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+</body>
+</html>

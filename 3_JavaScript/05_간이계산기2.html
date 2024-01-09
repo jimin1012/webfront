@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간이계산기2</title>
+</head>
+<body>
+    <h2>간이 계산기 만들기</h2>
+    
+    <div>
+        <span>첫번째 값 : </span>
+        <input type="number" name="Num" id="firstNum">
+    </div>
+    <div>
+        <span>두번째 값 : </span>
+        <input type="number" name="Num" id="secondNum">
+    </div>
+
+    <div style="display: inline-block;">
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate('*')">*</button>
+        <button onclick="calculate('/')">/</button>
+        <button onclick="calculate('%')">%</button>
+    </div>
+    
+    <div>
+        계산결과 : <span id="resultText"></span>
+    </div>
+
+    
+    <script>
+        function calculate(op){
+            // op에는 +, -, *, /, % 중 하나가 전달되어짐
+
+            // input에 입력된 값을 얻어와 바로 number 타입으로 변환
+            const num1= Number(document.getElementById("firstNum").value);
+            const num2= Number(document.getElementById("secondNum").value);
+
+            const result = document.getElementById("resultText");
+            switch (op) {
+                case '+':
+                    result.innerHTML = num1+num2;
+                break;
+                case '-':
+                    result.innerHTML = num1-num2;
+                break;
+                case '*':
+                    result.innerHTML = num1*num2;
+                break;
+                case '/':
+                    result.innerHTML = num1/num2;
+                break;
+                case '%':
+                    result.innerHTML = num1%num2;
+                break;
+            }
+
+        }
+    </script>
+</body>
+</html>

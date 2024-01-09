@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Woo_signUp.css">
+    <title>signup</title>
+</head>
+<body>
+     <!-- 가장 큰 감싸는 부분 -->
+     <div class="wrap">
+        <!-- 헤더시작 -->
+        <header>
+            <div class="hd-inner">
+                <div class="hd-left">
+                    <img id="hd-logo" src="https://career-cdn.woowahan.com/resources/static/img/logo-pc.2b4c3501.svg" alt="">
+                </div>
+                <div class="hd-mid">
+                    <ul>
+                        <li><a href="Woowahan_recruitList.html">지원하기</a></li>
+                        <li><a href="#">영업프로세스</a></li>
+                        <li><a href="#">어떻게 일해요?</a></li>
+                        <li><a href="#">우아한생활</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="hd-right">
+                    <nav>
+                        <a href="#">우아한형제들</a>
+                        <a href="#">기술 블로그</a>
+                        <a href="#">배민다움</a>
+                    </nav>
+                    <ul>
+                        <li><img src="https://career-cdn.woowahan.com/resources/static/img/icon-heart.27927156.svg" alt="#"></li>
+                        <li><img src="https://career-cdn.woowahan.com/resources/static/img/icon-my.61f07f16.svg" alt="#"></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main>
+            <div class="main-title">
+                <h2>신규지원자 등록</h2>
+                <div>
+                    <p>º 입력하신 이메일 계정으로 전형결과를 확인하실 수 있으며, 비밀번호 분실 시 사용자 인증이 진행됩니다.</p>
+                    <p>º 7일 내에 이메일 인증을 하지 않는 경우, 해당 계정은 자동으로 삭제됩니다.</p>
+                    <p>º 동일인이 여러개의 이메일을 이용하여 다수의 계정을 사용하거나, 입력한 정보가 정확하지 않을 경우 채용시점에 불이익을 받을 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="main-content">
+                <form action="#" name="signUp" class="signUp">
+                    <fieldset>
+                        <div class="signUp-line-group">
+                            <div class="signUp-box">
+                                <label for="email">이메일</label>
+                                <input type="email" name="email" id="email" placeholder="이메일을 입력해주세요">
+                            </div>
+                        </div>
+                        <div class="signUp-line-group">
+                            <div class="signUp-box">
+                                <label for="password1">비밀번호</label>
+                                <input type="password" name="password" id="password1" placeholder="비밀번호를 입력해 주세요">
+                            </div>
+                            <div class="signUp-box">
+                                <label for="password2">비밀번호 확인</label>
+                                <input type="password" name="password" id="password2" placeholder="비밀번호를 다시 입력해 주세요">
+                            </div>
+                        </div>
+                        <div class="signUp-line-group">
+                            <div class="signUp-box">
+                                <label for="name">이름 (한글)</label>
+                                <input type="text" name="name" id="name" placeholder="이름을 입력해 주세요">
+                            </div>
+                            
+                        </div>
+                        <div class="signUp-line-group">
+                            <div class="signUp-box">
+                                <label for="btday">생년월일</label>
+                                <input type="text" name="btday" id="btday" placeholder="YYYY-MM-DD">
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="gender-m">
+                                <label for="gender-m">남</label>
+                                <input type="radio" name="gender" id="gender-f">
+                                <label for="gender-f">여</label>
+                            </div>
+                        </div>
+                        <div class="signUp-line-group">
+                            <div class="signUp-box">
+                                <label for="phone">휴대폰 번호</label>
+                                <input type="number" name="phone" id="phone" placeholder="000-0000-0000">
+                            </div>
+                        </div>
+                        <div class="sign-terms-group">
+                            <div>
+                                <input type="checkbox" name="ckbox" id="ckbox" onchange="asd()">
+                                <label for="ckbox">[필수] 개인정보 수집 및 이용동의</label>
+                            </div>
+                            <div>
+                                <textarea name="terms" id="terms" readonly >
+(주)우아한형제들(이하 ‘회사’)은 아래와 같이 개인정보를 수집 및 이용합니다.
+
+1. 수집 · 이용 항목
+                                    
+- 이메일주소, 비밀번호, 휴대전화번호, 이름, 생년월일, 성별
+2. 수집 · 이용 목적
+                                    
+수집한 개인정보는 아래 목적으로 이용됩니다.
+                                    
+- 지원자 식별 및 등록, 지원자 관리
+- 지원의사 확인, 채용 진행
+- 지원 결과 조회 및 지원 이력 관리
+- 채용 진행을 위한 안내 및 고지사항 전달, 문의대응
+- 통계 및 분석, 서비스 개선, 신규서비스 개발
+3. 보유 및 이용기간
+
+지원자 계정 삭제 시 즉시 파기합니다.
+
+- 또한 마지막 접속일로부터 5년간 이용하지 않으시면 자동으로 파기합니다.
+※ 지원자 등록을 위해서는 이메일 인증이 완료되어야 합니다.
+이메일 인증을 완료하지 않은 경우 지원자 등록을 위해 제출하신 정보는 7일 뒤 자동 삭제됩니다.
+※ 지원자 분들께 발송된 모든 정보들은 발송일을 기준으로 6개월 뒤 파기됩니다.
+개인정보 수집 이용에 동의하지 않으실 수 있으며, 동의하지 않는 경우 지원자 등록이 제한됩니다.
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="signUp-btn">
+                            <button id="signUp-btn" type="submit">등록하기</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        
+        <!-- footer 시작 -->
+        <footer>
+            <div class="ft-wrap">
+                <div class="ft-top">
+                    <!-- 위로 올라가는 이미지 넣을공간임 -->
+                </div>
+                <div class="ft-bottom">
+                    <!-- 그 아래 부분 선과 글자들 -->
+                    <div class="ft-b-left">
+                        <div>
+                            <p>이용약관 |</p>
+                            <p><strong>개인정보처리방침</strong></p>
+                        </div>
+                        <div>서울시 송파구 위례성대로 2 장은빌딩 2층 (주)우아한형제들</div>
+                        <div>Copyright © <strong style="color: black;">Woowa Brothers Corp.</strong> All rights Reserved</div>
+                    </div>
+                    <div class="ft-b-right">
+                        <div>
+                            <a href="#"><img src="https://career-cdn.woowahan.com/resources/static/img/icon-instagram.6232efef.svg" alt="#"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://career-cdn.woowahan.com/resources/static/img/icon-youtube.7a99525c.svg" alt="#"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://career-cdn.woowahan.com/resources/static/img/icon-facebook-gray.82b9d6b7.svg" alt="#"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://career-cdn.woowahan.com/resources/static/img/icon-linkedin.4a36c8bd.svg" alt="#"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://career-cdn.woowahan.com/resources/static/img/footer-logo.f179a6be.svg" alt="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

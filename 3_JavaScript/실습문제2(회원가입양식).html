@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제(회원가입양식)</title>
+    <style>
+       div{
+        display: flex;
+        width: 100%;
+        margin-bottom: 15px;
+       }
+       div>label:first-child{
+        width: 25%;
+        margin-left: 5px;
+       }
+       div > input:nth-of-type(1){
+        width: 170px;
+        margin-right: 10px;
+        height: 20px;
+        padding: 0;
+       }
+       span{
+        font-size: 12px;
+        padding-top: 3px;
+       }
+    </style>
+</head>
+<body>
+    <form action="실습문제2(회원가입OK).html" onsubmit="return validate()" style="width: 470px;">
+        <fieldset >
+            <legend>회원 가입 양식</legend>
+            <div >
+                <label for="user-id">아이디</label>
+                <input type="text" name="user-id" id="user-id">
+                <button type="button" id="id-ck-btn">중복확인</button>
+            </div>
+            <div>
+                <label for="user-pw1">비밀번호</label>
+                <input type="password" name="user-pw1" id="user-pw1">
+                <span id="pw-warning"></span>
+            </div>
+            <div>
+                <label for="user-pw2">비밀번호 확인</label>
+                <input type="password" name="user-pw2" id="user-pw2">
+            </div>
+            <div>
+                <label for="user-name">이름</label>
+                <input type="text" name="user-name" id="user-name">
+                <span id="name-warning"></span>
+            </div>
+            <div>
+                <label for="">성별</label>
+                <label for="user-gender-man">
+                    남
+                    <input type="radio" name="user-gender" id="user-gender-man">
+                </label>
+                <label for="user-gender-woman">
+                    여
+                    <input type="radio" name="user-gender" id="user-gender-woman">
+                </label>
+            </div>
+            <div>
+                <label for="user-phone">전화번호</label>
+                <input type="tel" name="user-phone" id="user-phone">
+            </div>
+            <div>
+                <label for="user-email">이메일</label>
+                <input type="email" name="user-email" id="user-email">
+            </div>
+
+            <div style="display: flex; justify-content: center; margin-left: 15px;">
+                <button id="clear-btn" type="button">초기화</button>
+                <button id="sign-up">회원가입</button>
+            </div>
+            
+        </fieldset>
+    </form>
+
+
+    <script src="js/회원가입양식.js"></script>
+</body>
+</html>

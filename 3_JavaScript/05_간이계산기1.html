@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_간이계산기1</title>
+</head>
+<body>
+    <h2>간이 계산기 만들기</h2>
+    
+
+    <div>
+        <span>첫번째 값 : </span>
+        <input type="number" name="Num" id="firstNum">
+    </div>
+    <div>
+        <span>두번째 값 : </span>
+        <input type="number" name="Num" id="secondNum">
+    </div>
+
+    <div style="display: inline-block;">
+        <button onclick="click_1()">+</button>
+        <button onclick="click_2()">-</button>
+        <button onclick="click_3()">*</button>
+        <button onclick="click_4()">/</button>
+        <button onclick="click_5()">%</button>
+    </div>
+
+    <div>
+        <p id="resultText"></p>
+    </div>
+
+    <!-- Number(문자열) : 문자열을 number 타입으로 변환 -->
+    <!-- 자바 스크립트는 문자열 값을 숫자로 변환하고 수학 연산을 수행함 -->
+    <script>
+        function click_1(){ /* 더하기 */
+            const fNum = document.getElementById("firstNum");
+            const sNum = document.getElementById("secondNum");
+
+            // let result = 0;
+
+            const resultText = document.getElementById("resultText")
+
+            resultText.innerHTML =  "계산결과 : "+ (Number(fNum.value)+ Number(sNum.value));
+        }
+        function click_2(){ /* 빼기 */
+            const fNum = document.getElementById("firstNum");
+            const sNum = document.getElementById("secondNum");
+
+            // let result = 0;
+
+            const resultText = document.getElementById("resultText")
+
+            resultText.innerHTML =  "계산결과 : "+ (Number(fNum.value) - Number(sNum.value));
+        }
+        function click_3(){ /* 곱하기 */
+            const fNum = document.getElementById("firstNum");
+            const sNum = document.getElementById("secondNum");
+
+            // let result = 0;
+
+            const resultText = document.getElementById("resultText")
+
+            resultText.innerHTML =  "계산결과 : "+ (Number(fNum.value) * Number(sNum.value));
+        }
+        function click_4(){ /* 나누기 (몫) */
+            const fNum = document.getElementById("firstNum");
+            const sNum = document.getElementById("secondNum");
+
+            // let result = 0;
+
+            const resultText = document.getElementById("resultText")
+
+            resultText.innerHTML =  "계산결과 : "+ (Number(fNum.value)/ Number(sNum.value));
+        }
+        function click_5(){ /* 나누기  나머지*/
+            const fNum = document.getElementById("firstNum");
+            const sNum = document.getElementById("secondNum");
+
+            // let result = 0;
+
+            const resultText = document.getElementById("resultText")
+
+            resultText.innerHTML =  "계산결과 : "+ (Number(fNum.value) % Number(sNum.value));
+        }
+    </script>
+</body>
+</html>

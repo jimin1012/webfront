@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+}
+
+header, main, footer,div{
+    /* border: 1px solid black; */
+}
+
+/* 큰 감싸는 영역 */
+.wrap{
+    min-width: 1200px;
+    min-height: 100vh;
+    /* width: 100vw; */
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+   
+}
+
+
+/* header 시작 */
+header{
+    width: 100%;
+    height: 95px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #ffffff;
+}
+
+.hd-inner{
+    min-width: 1200px;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+/* 헤더 왼쪽 */
+.hd-left{
+    height: 100%;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 헤더 가운데 */
+.hd-mid{
+
+    flex-basis: 60%;
+    height: 100%;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.hd-mid>ul{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+.hd-mid>ul li{
+    height: 100%;
+    display: inline-block;
+    margin: 0 10px;
+}
+.hd-mid>ul>li a{
+    padding: 0 10px;
+    height: 100%;
+    display: inline-block;
+
+    /* background-color: antiquewhite; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+
+}
+
+.hd-mid>ul>li a:hover{
+    color: #2ac1bc;
+    border-bottom: 3px solid #2ac1bc;
+}
+
+/* 헤더 오른쪽 */
+.hd-right{
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hd-right > nav a{
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.hd-right > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.hd-right > ul img{
+    padding: 0 5px;
+}
+
+
+
+/* main */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.main-title{
+    text-align: center;
+    width: 1000px;
+    margin: 77px auto 40px;
+}
+
+.main-title h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.main-title p{
+    font-size: 14px;
+    color: #777;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    background-color: #f5f5f5;
+    padding: 55px 50px 50px;
+}
+
+.signUp{
+    
+    width: 1000px;
+    background-color: #fff;
+}
+
+.signUp-line-group{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+    
+}
+
+.signUp-box{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.signUp-box label{
+    font-size: 14px;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.signUp-box input{
+    width: 100%;
+    height: 44px;
+    padding: 15px 15px 16px;
+    font-size: 13px;
+    border: 1px solid #ebebeb;
+    color: #ccc;
+}
+
+.sign-terms-group{
+    padding-top: 38px;
+}
+
+#terms{
+    
+    margin-top: 16px;
+    padding: 10px 15px;
+    width: 100%;
+    height: 166px;
+    color: #666;
+    resize: none;
+    font-size: 13px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    
+}
+
+.signUp-btn{
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signUp-btn{
+    width: 400px;
+    height: 60px;
+    color: #fff;
+    background-color: #ebebeb;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+
+
+
+/* footer 시작 */
+footer{
+    width: 1200px;
+    /* height: 240px; */
+}
+
+.ft-wrap{
+    border-top: 1px solid gainsboro;
+    margin: 80px auto 0;
+    height: 160px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.ft-top{
+
+}
+
+.ft-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.ft-b-left{
+    flex-basis: 50%;
+    padding-top: 10px;
+}
+
+.ft-b-left>div:nth-of-type(1){
+    display: flex;
+
+}
+.ft-b-left>div:nth-of-type(1) >p:last-child{
+    padding-left: 5px;
+}
+
+.ft-b-left>div:nth-of-type(2){
+    padding: 10px 0;
+    color: #777;
+}
+.ft-b-left>div:nth-of-type(3){
+    color: #777;
+}
+
+.ft-b-right{
+    padding-top: 10px;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: end;
+}
+.ft-b-right div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 10%;
+}

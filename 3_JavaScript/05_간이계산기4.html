@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_간이계산기4</title>
+</head>
+<body>
+    
+    <h2>간이 계산기 만들기</h2>
+    
+    <div>
+        <span>첫번째 값 : </span>
+        <input type="number" name="Num" id="firstNum">
+    </div>
+    <div>
+        <span>두번째 값 : </span>
+        <input type="number" name="Num" id="secondNum">
+    </div>
+
+    <!-- 
+        함수 호출 시 매개변수 this
+        -> 이벤트가 발생한 요소 자체를 의미한다.
+        (여기서는 클릭된 연산자 버튼)
+     -->
+    <div style="display: inline-block;">
+        <button onclick="calculate(this)">+</button>
+        <button onclick="calculate(this)">-</button>
+        <button onclick="calculate(this)">*</button>
+        <button onclick="calculate(this)">/</button>
+        <button onclick="calculate(this)">%</button>
+    </div>
+    
+    <div>
+        계산결과 : <span id="resultText"></span>
+    </div>
+
+    <script>
+        function calculate(btn){
+            
+            //btn에는 this(클릭된 버튼 요소)가 전달되어짐
+            // console.log(btn);
+            
+            const op = btn.innerText; //버튼의 내용 (+,-,*,/,%)
+            // console.log("op : "+op);
+            
+            // input에 입력된 값을 얻어와 바로 number 타입으로 변환
+            const num1= Number(document.getElementById("firstNum").value);
+            const num2= Number(document.getElementById("secondNum").value);
+
+            const result = document.getElementById("resultText");
+            
+            // eval("코드 형식 문자열")
+            // -> 작성된 문자열을 JS 코드로 해석
+            // -> 속도 + 보안 이슈가 있어서 사용 지양 (사용하지마!)
+
+            // result.innerText = eval(num1 + op + num2)
+
+            result.innerText = new Function( "return "+ num1 + op + num2) ();
+        }
+       
+    </script>
+</body>
+</html>
