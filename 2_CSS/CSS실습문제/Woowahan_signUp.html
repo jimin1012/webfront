@@ -54,23 +54,27 @@
                         <div class="signUp-line-group">
                             <div class="signUp-box">
                                 <label for="email">이메일</label>
-                                <input type="email" name="email" id="email" placeholder="이메일을 입력해주세요">
+                                <input type="email" name="email" id="email" placeholder="이메일을 입력해주세요.">
+                                <span class="message">에러문구테스트</span>
                             </div>
                         </div>
                         <div class="signUp-line-group">
                             <div class="signUp-box">
                                 <label for="password1">비밀번호</label>
-                                <input type="password" name="password" id="password1" placeholder="비밀번호를 입력해 주세요">
+                                <input type="password" name="password" id="password1" placeholder="영어,숫자,특수문자 6~12글자 사이로 작성해주세요.">
+                                <span class="message">에러문구테스트</span>
                             </div>
                             <div class="signUp-box">
                                 <label for="password2">비밀번호 확인</label>
                                 <input type="password" name="password" id="password2" placeholder="비밀번호를 다시 입력해 주세요">
+                                
                             </div>
                         </div>
                         <div class="signUp-line-group">
                             <div class="signUp-box">
                                 <label for="name">이름 (한글)</label>
-                                <input type="text" name="name" id="name" placeholder="이름을 입력해 주세요">
+                                <input type="text" name="name" id="name" placeholder="이름을 입력해 주세요(한글만)">
+                                <span class="message">에러문구테스트</span>
                             </div>
                             
                         </div>
@@ -78,9 +82,10 @@
                             <div class="signUp-box">
                                 <label for="btday">생년월일</label>
                                 <input type="text" name="btday" id="btday" placeholder="YYYY-MM-DD">
+                                <span class="message">에러문구테스트</span>
                             </div>
                             <div>
-                                <input type="radio" name="gender" id="gender-m">
+                                <input type="radio" name="gender" id="gender-m" checked>
                                 <label for="gender-m">남</label>
                                 <input type="radio" name="gender" id="gender-f">
                                 <label for="gender-f">여</label>
@@ -89,7 +94,8 @@
                         <div class="signUp-line-group">
                             <div class="signUp-box">
                                 <label for="phone">휴대폰 번호</label>
-                                <input type="number" name="phone" id="phone" placeholder="000-0000-0000">
+                                <input type="text" name="phone" id="phone" placeholder="000-0000-0000">
+                                <span class="message">에러문구테스트</span>
                             </div>
                         </div>
                         <div class="sign-terms-group">
@@ -170,5 +176,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/main-style.js"></script>
 </body>
 </html>
