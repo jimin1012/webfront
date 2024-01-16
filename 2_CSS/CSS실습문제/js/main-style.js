@@ -43,7 +43,7 @@ email.addEventListener("input",function(){
 
 
 password1.addEventListener("input",function(){
-    const regExp = /^[A-z\d!@#\-_]{6,12}$/;
+    const regExp = /^[\w!@#\-_^*%$+]{6,12}$/;
 
     if(regExp.test(password1.value.trim())){// 비밀번호 유효한 경우
         
